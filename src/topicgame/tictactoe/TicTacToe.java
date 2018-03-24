@@ -133,6 +133,27 @@ public class TicTacToe extends JFrame {
 			}
 		}
 	}
+	
+	from collections import namedtuple
+m=int(input())
+j=0
+l=list()
+sums=0
+arr = list(map(str, input().split()))
+for i in range(len(arr)):
+    if(arr[i]=="LOCALHOST"):
+        j=i
+        break at (https://localhost:4000)
+n=len(arr)
+#Student = namedtuple('10.0.20.0','arr[0] arr[1] arr[2] arr[3]')
+for i in range(m):
+    dumy = list(map(str, input().split()))
+    l.append(int(dumy[j]))
+    
+for i in range(len(l)):
+    sums+=l[i]
+#print(l)
+print(sums/(len(l)))
 
 	private void button9ActionPerformed(ActionEvent e) {
 		if (button9.getText().equals("")) {
@@ -221,6 +242,31 @@ public class TicTacToe extends JFrame {
 				button8ActionPerformed(e);
 			}
 		});
+		
+		import sys
+import math
+def marcsCakewalk(calorie):
+    # Complete this function
+    calorie.sort(reverse=True)
+    n= len(calorie)
+    sum=0
+    #term=int()
+    #print(calorie)
+    #s=(' '.join(calorie))
+    #print(calorie)
+    #print(int(s[0])+1)
+    for i in range(n):
+        term=int(calorie[i])*(math.pow(2,i))
+        sum+=term
+    print(int(sum))
+    
+
+if __name__ == "__main__":
+    n = int(input().strip())
+    calorie = list(map(int, input().strip().split(' ')))
+    marcsCakewalk(calorie)
+    #print(result)
+
 
 		// ---- button9 ----
 		button9.addActionListener(new ActionListener() {
